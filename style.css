@@ -3,6 +3,8 @@
 body {
     background-color: aliceblue;
     margin: 0;
+    padding:0;
+    overflow-x: hidden;
 }
 .img-main{
     width: 100%;
@@ -178,6 +180,7 @@ nav a :hover{
 .box-1{
     height: 320px;
     width: 250px;
+    
 }
 .box-1 img {
     width: 100%; /* Make images fill their containers */
@@ -195,15 +198,21 @@ nav a :hover{
     height: 320px;
     display: flex;
     top: 0%;
-    left: -3%;
     position: absolute;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     opacity: 0;
     transform: 0.3s;
+    margin-top: 50px;
     font-size: 27px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.box-1-h1 h2{
+    margin: 0%;
+}
+.box-1-h1 p{
+    margin: 0%;
 }
 .box-1-h1:hover{
     opacity: 1;
@@ -296,12 +305,12 @@ nav a :hover{
 #openModalBtn{
     background-color: transparent;
     border: none;
-    color: #DAD5D5;
+    color: hsl(0, 0%, 100%);
     cursor: pointer;
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    padding-top: 9px;
+    font-size: 32px;
+    padding-top: 34px;
 }
 #openModalBtn:hover{
     color: #000000; /* Change the color on hover */
@@ -394,7 +403,7 @@ nav a :hover{
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 24px;
     border-radius: 35px;
     margin-top: 30px;
 }
