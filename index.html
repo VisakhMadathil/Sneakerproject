@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,1000;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap" rel="stylesheet">
+        <title>Sneaker Store</title>
+    </head>
+    <body>
+        <div class="content">
+            <nav>
+               
+                <ul>
+                    <li><a href="#">MEN</a></li>
+                    <li><a href="#">WOMEN</a></li>
+                    <li><a href="#">KIDS</a></li>
+                    <li><a href="#">SALES</a></li>
+                    <li><a href="#">CUSTOMIZE</a></li>
+                </ul>
+            </nav>
+            <div class="buttonclass">
+                <button id="openModalBtn">Login</button>
+            </div>
+           
+            <div class="overlay">  
+                <p>Save up to 40%</p>
+                <p2>No matter what you feel like doing today, It’s better as a Member.</p2>
+                <p3>Join Us</p3>
+            </div>
+            <div class="logo">
+                <p1>Sneaker</p1>
+                <p2>Store</p2>
+            </div>
+            <div class="img-main">
+                <img src="landing-img.jpg.jpg" alt="image">
+            </div>   
+        </div> 
+        <div class="video-container">
+            <video  autoplay loop muted>
+                <source src="Introducing the LeBron 17 _ Nike (online-video-cutter.com).mp4" type="video/mp4">
+                
+            </video>
+        </div>
+        <div class="sale">
+            <h1>THE GAME’S ALL HERE</h1>
+            <p1 class="p-trending">TRENDING</p1>
+            <div class="trending">
+                <div class="box-1">
+                    <img src="nike-running.jpg.jpg" alt="Sneaker img">
+                    <div class="box-1-h1">
+                        <h2>NIKE</h2>
+                        <p>Ultra Boost</p>
+                    </div>
+                </div>
+                <div class="box-2">
+                    <img src="nike-af1.jpg.jpg" alt="Sneaker img">
+                </div>
+                <div class="box-3">
+                    <img src="puma.jpg.jpg" alt="Sneaker img">
+                </div>
+                <div class="box-4">
+                    <img src="nike-basketball.jpg.jpg" alt="Sneaker img">
+                </div>
+            </div>
+            <p1 class="p-for-you">FOR YOU</p1>
+            <div class="for-you">
+                <div class="box-5">
+                    <img src="yeezy.jpg.jpg" alt="Sneaker img">
+                </div>
+                <div class="box-6">
+                    <img src="NB.jpg.jpg" alt="Sneaker img">
+                </div>
+                <div class="box-7">
+                    <img src="aj6.jpg.jpg" alt="Sneaker img">
+                </div>
+                <div class="box-8">
+                    <img src="samba.jpg.jpg" alt="Sneaker img">
+                </div>
+            </div>
+            <div class="about">
+                <img src="about.jpg" alt="image">
+            </div>   
+        </div>
+        <div id="loginModal" class="modal">
+            <div class="modal-content">
+              <span class="close" id="closeModalBtn">&times;</span>
+              <form class="login-form-modal">
+                <h2 class="h2-modal">Login</h2>
+                <input type="text" id="username" name="username" placeholder="Username" required>
+                <input type="password" id="password" name="password" placeholder="Password">
+                <button type="submit" id="modal-btn">Login</button>
+              </form>
+            </div>
+        </div>
+        <script type="text/javascript" src="sneaker.js"></script>
+</html>
+
+
+
+
