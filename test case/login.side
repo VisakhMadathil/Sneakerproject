@@ -1,0 +1,117 @@
+{
+  "id": "3329da78-08da-42de-b98f-febc972bd4e9",
+  "version": "2.0",
+  "name": "Sneaker store",
+  "url": "http://localhost:8083",
+  "tests": [{
+    "id": "b8314336-1d57-4825-a5d4-1c216152364d",
+    "name": "login",
+    "commands": [{
+      "id": "5a3a354d-d7fe-4bef-91d6-e779109db88b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dbc906d3-40f0-43f1-98fb-1defe05fba99",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bbd265f0-7b50-4ea8-8a9a-5470073aadd3",
+      "comment": "",
+      "command": "click",
+      "target": "id=openModalBtn",
+      "targets": [
+        ["id=openModalBtn", "id"],
+        ["css=#openModalBtn", "css:finder"],
+        ["xpath=//button[@id='openModalBtn']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fa916a1-dd4c-49f6-a4a6-c191e4e9e893",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginModal']/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "54c549f5-9b89-4cdb-8d6e-418eff19fc3f",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginModal']/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "VisakhMadathil"
+    }, {
+      "id": "d174d63a-599e-402b-b613-3014298b5310",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginModal']/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd59c401-68b4-4c95-bc9d-a3c322ccc287",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginModal']/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "madathil"
+    }, {
+      "id": "264b7061-229e-48de-904b-0f9d1af90bb1",
+      "comment": "",
+      "command": "click",
+      "target": "id=modal-btn",
+      "targets": [
+        ["id=modal-btn", "id"],
+        ["css=#modal-btn", "css:finder"],
+        ["xpath=//button[@id='modal-btn']", "xpath:attributes"],
+        ["xpath=//div[@id='loginModal']/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "23d3e2bd-f99e-4b3c-a2af-a447a926cd7d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b8314336-1d57-4825-a5d4-1c216152364d"]
+  }],
+  "urls": ["http://localhost:8083/"],
+  "plugins": []
+}

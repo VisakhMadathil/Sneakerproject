@@ -1,0 +1,52 @@
+body {
+    background-color: white;
+    margin: 0;
+    padding:0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-content: center; */
+    margin-top: 100px;
+
+}
+.image img{
+    width: 370px;
+}
+.Details{
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+}
+.buttons{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.uk6{
+    border-color: rgb(178 178 178);
+    background-color: transparent;
+    width: 115px;
+    height: 45px;
+    border-width: 1px;
+    border-radius: 4px;
+    border-style: solid;
+    font-size: 15px;
+    font-weight: 400;
+}
+.buttons :hover{
+    cursor: pointer;
+    border-width: 2px;
+}
+.row-1{
+margin-top: 5px;
+}
+.row-2{
+margin-top: 5px;
+}
+.row-3{
+margin-top: 5px;
+}
+.row-4{
+margin-top: 5px;
+}

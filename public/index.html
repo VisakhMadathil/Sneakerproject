@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,1000;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap" rel="stylesheet">
+        <title>Sneaker Store</title>
+    </head>
+    <body>
+        <div class="content">
+            <nav>
+               
+                <ul>
+                    <li><a href="#">MEN</a></li>
+                    <li><a href="#">WOMEN</a></li>
+                    <li><a href="#">KIDS</a></li>
+                    <li><a href="#">SALES</a></li>
+                    <a href="feedback.html">
+                    <button id="openModalBtn1">Feedback</button></a></li>
+                </ul>
+            </nav>
+            <div class="buttonclass">
+                <button id="openModalBtn">Login</button>
+            </div>
+            <div class="overlay">  
+                <p>Save up to 40%</p>
+                <p2>No matter what you feel like doing today, It’s better as a Member.</p2>
+                <p3>Join Us</p3>
+            </div>
+            <div class="logo">
+                <p1>Sneaker</p1>
+                <p2>Store</p2>
+            </div>
+            <div class="img-main">
+                <img src="/public/image/landing-img.jpg.jpg" alt="image">
+            </div>   
+        </div> 
+        <div class="video-container">
+            <video  autoplay loop muted>
+                <source src="/public/image/Introducing the LeBron 17 _ Nike (online-video-cutter.com).mp4" type="video/mp4">
+                
+            </video>
+        </div>
+        <div class="sale">
+            <h1>THE GAME’S ALL HERE</h1>
+            <p1 class="p-trending">TRENDING</p1>
+            <div class="trending">
+                <div class="box-1">
+                    <a href="nikeultra.html"><img src="/public/image/dunk-low-shoes-W544sp.png" alt="Sneaker img"></a>
+                    <div class="box-1-h1">
+                        <a href="nikeultra.html"><h2>NIKE</h2></a>
+                        <p>Ultra Boost</p>
+                    </div>
+                </div>
+                <div class="box-2">
+                    <a href="airforce.html"><img src="/public/image/nike-af1.jpg.jpg" alt="Sneaker img">
+                    <div class="box-1-h1">
+                        <h2>NIKE</h2>
+                        <p>Airforce</p>
+                    </div>
+                </div>
+                <div class="box-3">
+                    <a href="pumars.html"><img src="/public/image/puma.jpg.jpg" alt="Sneaker img">
+                    <div class="box-1-h1">
+                        <h2>PUMA</h2>
+                        <p>RS-X</p>
+                    </div>
+                </div>
+                <div class="box-4">
+                    <a href="pg-6.html"><img src="/public/image/nike-basketball.jpg.jpg" alt="Sneaker img">
+                    <div class="box-1-h1">
+                        <h2>NIKE</h2>
+                        <p>PG-6</p>
+                    </div>
+                </div>
+            </div>
+            <p1 class="p-for-you">FOR YOU</p1>
+            <div class="for-you">
+                <div class="box-5">
+                    <a href="image/yeezy.html"></a><img src="/public/image/yeezy.jpg.jpg" alt="Sneaker img">
+                    <div class="box-1-h1">
+                        <h2>ADIDAS</h2>
+                        <p>Yezzy</p>
+                    </div>
+                </div>
+                <div class="box-6">
+                    <a href="image/nb.html"></a> <img src="/public/image/NB.jpg.jpg" alt="Sneaker img">
+                    <div class="box-1-h1">
+                        <h2>NB</h2>
+                        <p>9060</p>
+                    </div>
+                </div>
+                <div class="box-7">
+                    <a href="aj5.html"></a> <img src="/public/image/aj6.jpg.jpg" alt="Sneaker img">
+                    <div class="box-1-h1">
+                        <h2>NIKE</h2>
+                        <p>Aj5 RetroX</p>
+                    </div>
+                </div>
+                <div class="box-8">
+                    <a href="samba.html"></a><img src="/public/image/samba.jpg.jpg" alt="Sneaker img">
+                    <div class="box-1-h1">
+                        <h2>ADIDAS</h2>
+                        <p>Samba</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about">
+            <img src="/public/image/about.jpg" alt="image">
+        </div>
+        <div id="loginModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeModalBtn">&times;</span>
+                <div class="login-container">
+                    <form id="login-form" action="http://localhost/sneakerstore/phpconnect.php" method="POST">
+                        <h2>Login</h2>
+                        <input type="text" placeholder="Username"  name="username" required>
+                        <input type="password" placeholder="Password" name="password" required>
+                        <p class="signup-link">Don't have an account? <span id="signup-link">Sign Up</span></p>
+                        <button type="submit" name="login">Login</button>
+                    </form>
+                    <form id="signup-form" class="hidden" action="http://localhost/sneakerstore/phpconnect.php" method="POST">
+                        <h2>Sign Up</h2>
+                        <input type="text" placeholder="Username" name="username" required>
+                        <input type="email" placeholder="Email" name="email" required>
+                        <input type="password" placeholder="Password" name="password" required>
+                        <p class="switch-form">Already have an account? <span id="login-link">Login</span></p>
+                        <button type="submit" name="register">Sign Up</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="loginpage.js"></script>
+    </body>
+</html>
+
+
+
+
