@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="author" content="Jifan Thottungal">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WRIST</title>
+        <link rel="icon" href="logo 1.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="buy.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Righteous&display=swap">
+    </head>
+    <body>
+        <div class="details">
+            <h2 id="h21">Billing Address</h2>
+            <form action="http://localhost/sneakerstore/paymentsphp.php" method="POST">
+                <div class="name">
+                    <h1>Full Name</h1>
+                    <input class="input1" type="text" name="name" placeholder="Name" required>
+                </div>
+                <div class="email">
+                    <h1>E-Mail</h1>
+                    <input class="input1" type="text" name="email" placeholder="E-mail" required>
+                </div>
+                <div class="phone">
+                    <h1>Mobile No</h1>
+                    <input class="input1" type="text" name="phone_no" placeholder="Phone No" required>
+                </div>
+                <div class="adress">
+                    <h1>Address</h1>
+                    <input class="input1" type="text" name="address" placeholder="Address" required>
+                </div>
+                <div class="city">
+                    <h1>City</h1>
+                    <input class="input1" type="text" name="city" placeholder="City" required>
+                </div>
+                <div class="state">
+                    <h1>State</h1>
+                    <input class="input1" type="text" name="state" placeholder="State" required>
+                </div>   
+                <div class="zipcode">
+                    <h1>Zip-Code</h1>
+                    <input class="input2" type="text" name="zipcode" placeholder="Zip-Code" required>
+                </div>
+        </div>
+        <div class="payment">
+            <div class="image-container-1">
+                <h2 id="h22">5712/1A - NAUTILUS</h2>
+                <img src="patek-2.png" alt="Nautilus Watch by Patek Philippe">
+            </div>
+            <div class="cod">
+                <h2 id="h23">Payment Option</h2>
+                <input class="input3" type="radio" id="cod" name="payment_option" value="cod">
+                <label for="cod">Cash On Delivery</label>
+                <div class="btn-container-2">
+                    <button class="btn-buy-now-1" type="submit" name="submit">Buy Now</button>
+                </div>
+            </div>
+        </form>
+        </div>
+    </body>
+</html>
